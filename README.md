@@ -1,7 +1,3 @@
-Here's the markdown code for the README file:
-
-markdown
-Copy code
 # **User-Item Recommendation System**
 
 This project is a **User-Item Recommendation System** that leverages a **graph-based DFS (Depth-First Search) algorithm** to provide personalized recommendations. The system dynamically loads data from an `interaction.csv` file that contains user-item interaction data. Based on the graph traversal, users can get recommendations for items (movies or any type of items they have interacted with).
@@ -66,13 +62,8 @@ The system uses a **graph-based approach** for recommendations:
   user2,item1
   user2,item3
   user3,item2
-# **User-Item Recommendation System**
 
-This project is a **User-Item Recommendation System** that leverages a **graph-based DFS (Depth-First Search) algorithm** to provide personalized recommendations. The system dynamically loads data from an `interaction.csv` file that contains user-item interaction data. Based on the graph traversal, users can get recommendations for items (movies or any type of items they have interacted with).
-
----
-
-## **Columns**
+- **Columns**
 - **user**: The username of the user (e.g., `user1`).
 - **item**: The item (e.g., `item1`, `item2`, etc.) that the user has interacted with.
 
