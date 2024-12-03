@@ -83,3 +83,12 @@ Ensure the project directory structure is as follows:
 ├── interaction.csv
 ├── main.cpp
 └── RecommenderSystem.cpp
+
+
+3. Compilation
+To compile the code, navigate to the src directory and use the following g++ command:
+
+bash
+Copy code
+g++ -std=c++11 src/main.cpp src/RecommenderSystem.cpp -o movie_recommender
+
