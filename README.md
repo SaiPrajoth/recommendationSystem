@@ -92,7 +92,8 @@ Ensure that the project directory is structured as follows:
 ### 3. Compilation
 To compile the code, navigate to the `src` directory and run:
 ```bash
-g++ -std=c++11 src/main.cpp src/RecommenderSystem.cpp -o movie_recommender
+cd src
+g++ -std=c++11 main.cpp sRecommenderSystem.cpp -o recommender
 ```
 
 ### 4. Run the Program
