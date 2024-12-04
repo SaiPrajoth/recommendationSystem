@@ -93,7 +93,7 @@ Ensure that the project directory is structured as follows:
 To compile the code, navigate to the `src` directory and run:
 ```bash
 cd src
-g++ -std=c++11 main.cpp sRecommenderSystem.cpp -o recommender
+g++ -std=c++11 main.cpp recommendersystem.cpp -o recommender
 ```
 
 ### 4. Run the Program
