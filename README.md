@@ -12,16 +12,16 @@ This document provides an overview of the User-Item Recommendation System projec
 │   └── interaction.csv      # CSV file with user-item interaction data
 └── src
     ├── main.cpp             # Entry point of the application
-    ├── RecommenderSystem.cpp  # Logic for recommendation system using DFS
-    └── RecommenderSystem.h    # Header file for the recommendation system logic
+    ├── recommendersystem.cpp  # Logic for recommendation system using DFS
+    └── recommendersystem.h    # Header file for the recommendation system logic
 ```
 
 ### Explanation of Project Structure
 
 - `data/interaction.csv`: Contains the interaction data between users and items. This file lists which users have interacted with which items (e.g., liked or viewed).
 - `src/main.cpp`: The entry point of the program. It loads the interaction data and prompts the user to input a username. It then generates and displays recommendations using the `RecommenderSystem` class.
-- `src/RecommenderSystem.cpp`: Contains the logic for the recommendation system. It constructs a graph from the interaction data and performs DFS-based traversal to recommend items for a given user.
-- `src/RecommenderSystem.h`: The header file that declares the `RecommenderSystem` class and its methods.
+- `src/recommendersystem.cpp`: Contains the logic for the recommendation system. It constructs a graph from the interaction data and performs DFS-based traversal to recommend items for a given user.
+- `src/recommendersystem.h`: The header file that declares the `RecommenderSystem` class and its methods.
 
 ## Architecture
 
@@ -62,13 +62,13 @@ The entry point of the program, responsible for:
 - Asking the user to input a username.
 - Displaying the recommended items for the user based on the DFS traversal.
 
-### 3. `src/RecommenderSystem.cpp`
+### 3. `src/recommendersystem.cpp`
 
 Contains the implementation of the recommendation system:
 - Constructs the graph of user-item interactions.
 - Implements the DFS algorithm to explore the graph and generate recommendations for the selected user.
 
-### 4. `src/RecommenderSystem.h`
+### 4. `src/recommendersystem.h`
 
 The header file declaring the functions and the `RecommenderSystem` class used to perform recommendations.
 
@@ -85,21 +85,21 @@ Ensure that the project directory is structured as follows:
 │   └── interaction.csv
 └── src
     ├── main.cpp
-    ├── RecommenderSystem.cpp
-    └── RecommenderSystem.h
+    ├── recommendersystem.cpp
+    └── recommendersystem.h
 ```
 
 ### 3. Compilation
 To compile the code, navigate to the `src` directory and run:
 ```bash
-
-g++ -std=c++11 main.cpp RecommenderSystem.cpp -o movie_recommender
+cd src
+g++ -std=c++11 main.cpp recommendersystem.cpp -o recommender
 ```
 
 ### 4. Run the Program
 After compiling, run the program using:
 ```bash
-./movie_recommender
+./recommender
 ```
 
 ## Usage Instructions
@@ -107,7 +107,7 @@ After compiling, run the program using:
 ### 1. Start the Program
 To start the application, run the following command:
 ```bash
-./movie_recommender
+./recommender
 ```
 
 ### 2. View Usernames
@@ -152,13 +152,13 @@ After collecting the items, the system ensures that no item is recommended more 
 ### Compilation
 To compile the code, run:
 ```bash
-g++ -std=c++11 src/main.cpp src/RecommenderSystem.cpp -o movie_recommender
+g++ -std=c++11 src/main.cpp src/recommendersystem.cpp -o recommender
 ```
 
 ### Execution
 To run the program, use:
 ```bash
-./movie_recommender
+./recommender
 ```
 
 ## Testing and Validation
