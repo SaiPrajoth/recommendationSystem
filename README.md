@@ -90,7 +90,7 @@ Ensure that the project directory is structured as follows:
 ```
 
 ### 3. Compilation
-To compile the code, navigate to the `src` directory and run:
+To compile the code, navigate to the root folder directory and run:
 ```bash
 cd src
 g++ -std=c++11 main.cpp recommendersystem.cpp -o recommender
